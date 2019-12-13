@@ -1,0 +1,13 @@
+.encabezado{
+    justify-content: space-between;
+}
+.button{
+    margin:15px
+}
+
+form{
+    margin:15px
+}
+.encabezadoMain{
+    text-align: center;
+}

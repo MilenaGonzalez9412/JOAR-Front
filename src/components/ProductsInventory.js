@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Axios from "axios";
 import { API_URL } from "../config";
 import { Link } from "react-router-dom";
+import "./Styles.css";
 
 export default class ProductsInventory extends Component {
   //Se cargan los productos al iniciar el componente.
@@ -52,21 +53,7 @@ export default class ProductsInventory extends Component {
                 <td>{product.Producto}</td>
                 <td>{product.Precio}</td>
                 <td>{product.Cantidad}</td>
-                {/* <td>
-                  {
-                    <Link to={
 
-                        {
-                            pathname:`/informacionProducto/${product._id}`,
-                            aboutProps: {
-                              fromNotifications: true
-                            }
-                          }
-                        }>
-                      <li className="list-group-item">Editar</li>
-                    </Link>
-                  }
-                </td> */}
                 <td>
                   <button
                     type="button"
@@ -83,11 +70,14 @@ export default class ProductsInventory extends Component {
       }
     }
     return (
-      <div className="col-md-5 order-md-2 mb-4">
-        <div className="row">
-          <h6>Listado</h6>
+      <div className="col">
+        <div className="row encabezado">
+          <h4>Listado de productos</h4>
+          <Link to="/">
+            <li className="list-group-item button">Inicio</li>
+          </Link>
           <Link to="/crearProducto">
-            <li className="list-group-item">Crear producto</li>
+            <li className="list-group-item button">Crear producto</li>
           </Link>
         </div>
 

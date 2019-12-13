@@ -6,7 +6,7 @@ class Main extends Component {
   render() {
     return (
       <>
-        <div className="">
+        <div className="encabezadoMain">
           <h1 className="display-4">Menú Principal</h1>
           <p className="lead">Rectificador de Culatas JOAR</p>
         </div>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Axios from "axios";
 import { API_URL } from "../config";
 import { Link } from "react-router-dom";
-
+import "./Styles.css";
 
 export default class ProductInformation extends Component {
   //Se definen las propiedades del producto.
@@ -36,10 +36,10 @@ export default class ProductInformation extends Component {
 
   render() {
     return (
-      <div className="col-md-12 order-md-1">
-        <div className="row">
+      <div className="col">
+        <div className="row encabezado">
           <Link to="/inventario">
-            <li className="list-group-item">Lista Productos</li>
+            <li className="list-group-item button">Atrás</li>
           </Link>
         </div>
 
